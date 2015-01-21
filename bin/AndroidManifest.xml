@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vistar.vattendance"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vistar.vattendance.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.vistar.vattendance.CLEARSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.OptionMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.vistar.vattendance.OPTIONMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.TakeAttendance"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.vistar.vattendance.TAKEATTENDANCE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.SubmitAttendance"
+            android:label="@string/title_activity_submit_attendance" >
+            <intent-filter>
+                <action android:name="com.vistar.vattendance.SUBMITATTENDANCE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.TestSchedule"
+            android:label="@string/title_activity_test_schedule" >
+            <intent-filter>
+                <action android:name="com.vistar.vattendance.TESTSCHEDULE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.ViewData"
+            android:label="@string/title_activity_view_data" >
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.MarkUpload"
+            android:label="@string/title_activity_mark_upload" >
+        </activity>
+       
+        <activity
+            android:name="com.vistar.vattendance.DbUpdater"
+            android:label="@string/title_activity_db_updater" >
+        </activity>
+        <activity
+            android:name="com.vistar.vattendance.EditAttendance"
+            android:label="@string/title_activity_edit_attendance" >
+        </activity>
+    </application>
+
+</manifest>

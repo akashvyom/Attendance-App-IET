@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:ignore="Overdraw" >
+
+    <TextView
+        android:id="@+id/tv_teachername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Teacher Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/button_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/attendance"
+        tools:ignore="ContentDescription"
+        android:onClick="bAttendance" />
+
+    <ImageButton
+        android:id="@+id/button_testschedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/testschedule"
+        tools:ignore="ContentDescription"
+        android:onClick="bTestschedule" />
+
+    <ImageButton
+        android:id="@+id/button_markupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/markupload"
+        tools:ignore="ContentDescription"
+        android:onClick="bMarkupload" />
+
+    <ImageButton
+        android:id="@+id/button_viewdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/viewdata"
+        tools:ignore="ContentDescription"
+        android:onClick="bViewdata" />
+
+</LinearLayout>
